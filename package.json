@@ -1,0 +1,21 @@
+{
+  "name": "bio",
+  "version": "1.0.0",
+  "description": "mike's bio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "biography"
+  ],
+  "author": "Mike Wilcox <mwilcox56@gmail.com> (http://github.com/mjw56)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.13.3",
+    "react-router": "^1.0.0-beta3"
+  },
+  "devDependencies": {
+    "express": "^4.13.3"
+  }
+}
