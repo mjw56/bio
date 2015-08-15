@@ -4,12 +4,14 @@ import ReactDOMServer from "react-dom/server";
 import Router from "react-router";
 import Location from 'react-router/lib/Location';
 import routes from "./src/routes";
+import { Provider } from 'react-redux';
+import configureStore from './src/lib/configureStore';
+import fetchComponentData from './src/middlewares/fetchComponentData';
 
 const app = express();
+app.use(express.static(__dirname + "/"));
 
-app.use(express.static('content'));
-
-app.get('/*', function (req, res) {
+app.use((req, res) => {
   const location = new Location(req.path, req.query);
 
   Router.run(routes, location, (err, routeState) => {
@@ -17,12 +19,20 @@ app.get('/*', function (req, res) {
 
     if(!routeState) return res.status(404).end('404');
 
+    const store = configureStore();
+
     function renderView() {
       const InitialView = (
-        <Router {...routeState} />
+        <Provider store={store}>
+          {() =>
+            <Router {...routeState} />
+          }
+        </Provider>
       );
 
       const componentHTML = ReactDOMServer.renderToStaticMarkup(InitialView);
+
+      const initialState = store.getState();
 
       const HTML = `
       <!DOCTYPE html>
@@ -30,11 +40,17 @@ app.get('/*', function (req, res) {
         <head>
           <meta charset="utf-8">
           <title>bio.</title>
+
+          <script>
+            window.__INITIAL_STATE__ = ${JSON.stringify(initialState)};
+          </script>
+
           <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-          <link href='css/app.css' rel='stylesheet' type='text/css'>
+          <link href='/content/css/app.css' rel='stylesheet' type='text/css'>
         </head>
-        <body>
-          <div id="react-view">${componentHTML}</div>
+        <body class="theme-default">
+          <div id="app">${componentHTML}</div>
+          <script type="application/javascript" src="/static/bundle.js"></script>
         </body>
       </html>
       `;
@@ -42,10 +58,11 @@ app.get('/*', function (req, res) {
       return HTML;
     }
 
-    res.end(renderView());
+    fetchComponentData(store.dispatch, routeState.components, routeState.params)
+      .then(renderView)
+      .then(html => res.end(html))
+      .catch(err => res.end(err.message));
   });
 });
 
-app.listen(3000, function () {
-  console.log(`Example app listening at http://localhost:3000`);
-});
+export default app;

@@ -1,0 +1,55 @@
+{
+  "name": "Mike Wilcox",
+  "education": {
+    "school": "Rutgers University, New Brunswick, NJ",
+    "subject": "B.S. in Computer Science"
+  },
+  "skills": [
+    "JavaScript",
+    "angular",
+    "react",
+    "flux",
+    "jQuery",
+    "node",
+    "git"
+  ],
+  "work": [
+    {
+      "company": "Bank of America: Merrill Lynch",
+      "title": "Assistant Vice President (Software Developer)",
+      "time": "February 2013 - Present",
+      "duties": "Architect and develop AngularJS mobile/desktop applications. Mentor younger developers."
+    },
+    {
+      "company": "Fifth Room Creative",
+      "title": "Web Developer",
+      "time": "March 2011 - July 2012",
+      "duties": "Custom Wordpress development. PHP/Javascript/SQL/Ruby/HTML/CSS web application development."
+    },
+    {
+      "company": "Washington Township",
+      "title": "Web Developer",
+      "time": "July 2009 - May 2011",
+      "duties": "Assisted with frequent updates to township website. Worked primarily in NetObjects Fusion."
+    },
+    {
+      "company": "Centocor",
+      "title": "IT Support Technician",
+      "time": "May 2006 - September 2006",
+      "duties": "Worked in company IT help center installing operating systems on employee machines and troubleshooting hardware problems. Assisted with upgrading specific types of printers throughout the company. Helped to organize company inventory room, saving company money through refurbishment of old equipment."
+    },
+    {
+      "company": "McNeil Consumer",
+      "title": "Intern",
+      "time": "May 2005 - August 2005",
+      "duties": "Helped with updates to company intranet website in Dreamweaver. Assisted with project to migrate database servers."
+    }
+  ],
+  "links": {
+    "github": "https://github.com/mjw56",
+    "twitter": "https://twitter.com/mjw56_",
+    "facebook": "https://www.facebook.com/mike.wilcox.520",
+    "linkedin": "https://www.linkedin.com/profile/view?id=99513972&trk=hp-identity-photo",
+    "website": "http://mjw56.github.io"
+  }
+}
