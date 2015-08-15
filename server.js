@@ -22,7 +22,7 @@ app.get('/*', function (req, res) {
         <Router {...routeState} />
       );
 
-      const componentHTML = ReactDOMServer.renderToString(InitialView);
+      const componentHTML = ReactDOMServer.renderToStaticMarkup(InitialView);
 
       const HTML = `
       <!DOCTYPE html>
@@ -31,7 +31,7 @@ app.get('/*', function (req, res) {
           <meta charset="utf-8">
           <title>bio.</title>
           <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-          <link href='app.css' rel='stylesheet' type='text/css'>
+          <link href='css/app.css' rel='stylesheet' type='text/css'>
         </head>
         <body>
           <div id="react-view">${componentHTML}</div>
