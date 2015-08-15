@@ -1,5 +1,6 @@
 import express from "express";
 import React from "react";
+import ReactDOMServer from "react-dom/server";
 import Router from "react-router";
 import Location from 'react-router/lib/Location';
 import routes from "./src/routes";
@@ -21,7 +22,7 @@ app.get('/*', function (req, res) {
         <Router {...routeState} />
       );
 
-      const componentHTML = React.renderToString(InitialView);
+      const componentHTML = ReactDOMServer.renderToString(InitialView);
 
       const HTML = `
       <!DOCTYPE html>
