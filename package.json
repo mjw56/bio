@@ -4,7 +4,7 @@
   "description": "mike's bio",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_PATH=$NODE_PATH:./shared node --harmony .",
+    "start": "node --harmony .",
     "dev": "npm run start & webpack-dev-server --progress --color",
     "build": "NODE_ENV=production webpack --progress --color -p --config webpack.config.js"
   },
@@ -15,6 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.5.4",
+    "express": "^4.13.3",
     "moment": "^2.10.6",
     "react": "^0.14.0-beta1",
     "react-dom": "^0.14.0-beta1",
