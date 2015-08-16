@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from "react";
 import { connect } from 'react-redux';
-import { Header, Experience, Links } from '../components';
+import { Header, Education, Experience, Links, Projects, Skills } from '../components';
 import configureStore from '../lib/configureStore';
 import { fetchInfo } from '../actions/actions'
 
@@ -20,6 +20,9 @@ class App extends Component {
       <div className="wrapper">
         <Header {...info} />
         <Experience {...info} />
+        <Education {...info} />
+        <Projects {...info} />
+        <Skills {...info} />
       </div>
     );
   }

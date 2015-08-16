@@ -2,15 +2,16 @@
   "name": "Mike Wilcox",
   "education": {
     "school": "Rutgers University, New Brunswick, NJ",
-    "subject": "B.S. in Computer Science"
+    "subject": "B.S. in Computer Science",
+    "time": "2010-2013"
   },
   "skills": [
     "JavaScript",
-    "angular",
-    "react",
+    "AngularJS",
+    "ReactJS",
     "flux",
     "jQuery",
-    "node",
+    "node.JS",
     "git"
   ],
   "work": [
@@ -51,5 +52,22 @@
     "facebook": "https://www.facebook.com/mike.wilcox.520",
     "linkedin": "https://www.linkedin.com/profile/view?id=99513972&trk=hp-identity-photo",
     "website": "http://mjw56.github.io"
-  }
+  },
+  "projects": [
+    {
+      "title": "At the Drive-In",
+      "description": "A searchable streaming torrent movie and TV show app built using React and Redux (Flux). This was fun to make! :)",
+      "link": "https://github.com/mjw56/at-the-drive-in-redux"
+    },
+    {
+      "title": "randUM",
+      "description": "An iOS React Native app to search for and stream music from the archive.org website",
+      "link": "https://github.com/mjw56/archive-rn-app"
+    },
+    {
+      "title": "ruscello",
+      "description": "A simple app listing New York Times Best Sellers. Uses TypeScript, React and Redux. Latest TypeScript 1.6 features including TSX and ES6 modules.",
+      "link": "https://github.com/mjw56/ruscello"
+    }
+  ]
 }

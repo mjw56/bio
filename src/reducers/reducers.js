@@ -23,8 +23,4 @@ function info(state = {
   }
 }
 
-const rootReducer = combineReducers({
-  info
-});
-
-export default rootReducer;
+export default combineReducers({info});
