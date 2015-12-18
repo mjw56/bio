@@ -1,12 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default class Skills {
+export default class Skills extends Component {
   _renderSections() {
-    var sections = []
-    this.props.skills.map((skill, i) => {
+    const sections = []
+    const { skills = [] } = this.props;
+
+    skills.map((skill, i) => {
       sections.push(
         <div className="resume-item" key={i}>
-          <h4 className="resume-item-details">{skill}</h4>
+          <h4 className="resume-item-details">{skill},</h4>
         </div>
       );
     });
@@ -19,7 +21,9 @@ export default class Skills {
         <header className="section-header">
           <h2>Skills</h2>
         </header>
-        {this._renderSections()}
+        <div className="resume-items">
+          [ {this._renderSections()} ]
+        </div>
       </section>
     )
   }

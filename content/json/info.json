@@ -7,9 +7,8 @@
   },
   "skills": [
     "JavaScript",
-    "AngularJS",
     "ReactJS",
-    "flux",
+    "AngularJS",
     "jQuery",
     "node.JS",
     "git"
@@ -19,7 +18,7 @@
       "company": "Bank of America: Merrill Lynch",
       "title": "Assistant Vice President (Software Developer)",
       "time": "February 2013 - Present",
-      "duties": "Architect and develop AngularJS mobile/desktop applications. Mentor younger developers."
+      "duties": "Architect and develop HTML5 AngularJS mobile/desktop applications. Mentor younger developers.\n\n Prototype development using agile software methodology."
     },
     {
       "company": "Fifth Room Creative",
@@ -56,7 +55,7 @@
   "projects": [
     {
       "title": "At the Drive-In",
-      "description": "A searchable streaming torrent movie and TV show app built using React and Redux (Flux). This was fun to make! :)",
+      "description": "A searchable streaming torrent movie and TV show app built using React and Redux (Flux).",
       "link": "https://github.com/mjw56/at-the-drive-in-redux"
     },
     {

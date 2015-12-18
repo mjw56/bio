@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default class Links {
+export default class Links extends Component {
+
   render() {
+    const { links = {} } = this.props;
     return (
       <ul className="icon-links">
         <li className="icon-link-item">
-          <a href={this.props.links.github} className="icon-link">
+          <a href={links.github} className="icon-link">
             <svg className="icon" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                viewBox="0 0 28 28" enable-background="new 0 0 28 28" space="preserve" width="28">
                <path id="GitHub" fill-rule="evenodd" clip-rule="evenodd" fill="#D1CECC" d="M14.01,0C6.27,0-0.01,6.28-0.01,14.02
@@ -20,7 +22,7 @@ export default class Links {
         </li>
 
         <li className="icon-link-item">
-          <a href={this.props.links.twitter} className="icon-link">
+          <a href={links.twitter} className="icon-link">
             <svg className="icon" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                viewBox="0 0 28 28" enable-background="new 0 0 28 28" space="preserve" width="28">
                <path id="Twitter" fill="#D1CECC" d="M14,0C6.27,0,0,6.27,0,14s6.27,14,14,14s14-6.27,14-14S21.73,0,14,0z M20.69,10.57
@@ -35,7 +37,7 @@ export default class Links {
         </li>
 
         <li className="icon-link-item">
-          <a href={this.props.links.facebook} className="icon-link">
+          <a href={links.facebook} className="icon-link">
             <svg className="icon" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 28 28" enable-background="new 0 0 28 28" space="preserve" width="28">
               <path id="Facebook" fill="#D1CECC" d="M14,0C6.27,0,0,6.27,0,14s6.27,14,14,14s14-6.27,14-14S21.73,0,14,0z M20.99,20.22
@@ -47,7 +49,7 @@ export default class Links {
         </li>
 
         <li className="icon-link-item">
-          <a href={this.props.links.linkedin} className="icon-link">
+          <a href={links.linkedin} className="icon-link">
             <svg className="icon" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                viewBox="0 0 28 28" enable-background="new 0 0 28 28" space="preserve" width="28">
                <path id="LinkedIn" fill="#D1CECC" d="M18.82,15.09v3.61h-2.09v-3.37c0-0.85-0.3-1.42-1.06-1.42c-0.58,0-0.92,0.39-1.07,0.77
@@ -61,7 +63,7 @@ export default class Links {
         </li>
 
         <li className="icon-link-item">
-          <a href={this.props.links.website} className="icon-link">
+          <a href={links.website} className="icon-link">
             <svg className="icon" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                viewBox="0 0 28 28" enable-background="new 0 0 28 28" space="preserve" width="28">
               <path id="Website" fill="#D1CECC" d="M14.83,7.6c0.03,0.08,0.03,0.14,0,0.19s-0.08,0.07-0.17,0.07c-0.12,0-0.26-0.01-0.4-0.04

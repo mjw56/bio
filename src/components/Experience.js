@@ -1,18 +1,16 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default class Experience {
+export default class Experience extends Component {
   _renderSections() {
-    var sections = []
-    this.props.work.map((exp, i) => {
-      sections.push(
-          <div className="resume-item" key={i}>
-            <h3 className="resume-item-title">{exp.company}</h3>
-            <h4 className="resume-item-details">{exp.title} &bull; {exp.time}</h4>
-            <p className="resume-item-copy">{exp.duties}</p>
-          </div>
-      );
-    });
-    return sections;
+    const { work = [] } = this.props;
+
+    return work.map((exp, i) => (
+        <div className="resume-item" key={i}>
+          <h3 className="resume-item-title">{exp.company}</h3>
+          <h4 className="resume-item-details">{exp.title} &bull; {exp.time}</h4>
+          <p className="resume-item-copy">{exp.duties}</p>
+        </div>
+    ));
   }
 
   render() {

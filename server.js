@@ -8,10 +8,37 @@ import { Provider } from 'react-redux';
 import configureStore from './src/lib/configureStore';
 import fetchComponentData from './src/middlewares/fetchComponentData';
 
-const app = express();
-app.use(express.static(__dirname + "/"));
+import webpack from 'webpack';
+import webpackDevMiddleware from 'webpack-dev-middleware';
+import webpackHotMiddleware from 'webpack-hot-middleware';
+import webpackConfig from './webpack.config';
 
-app.use((req, res) => {
+const server = express();
+
+var config = {};
+var host = config.host || 'localhost';
+var port = (config.port + 1) || 3001;
+
+var serverOptions = {
+  contentBase: 'http://' + host + ':' + port,
+  quiet: true,
+  noInfo: true,
+  hot: true,
+  inline: true,
+  lazy: false,
+  publicPath: webpackConfig.output.publicPath,
+  headers: {'Access-Control-Allow-Origin': '*'},
+  stats: {colors: true}
+};
+
+// Use this middleware to set up hot module reloading via webpack.
+const compiler = webpack(webpackConfig)
+server.use(webpackDevMiddleware(compiler, serverOptions))
+server.use(webpackHotMiddleware(compiler))
+
+server.use(express.static(__dirname + "/"));
+
+server.use((req, res) => {
   const location = createLocation(req.url);
 
   const store = configureStore();
@@ -63,4 +90,4 @@ app.use((req, res) => {
   });
 });
 
-export default app;
+export { server };

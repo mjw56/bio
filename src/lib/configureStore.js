@@ -6,8 +6,6 @@ import promiseMiddleware from '../middlewares/promiseMiddleware'
 
 const createStoreWithMiddleware = applyMiddleware(
   promiseMiddleware,
-  thunkMiddleware,
-  loggerMiddleware
 )(createStore);
 
 export default function configureStore(initialState) {

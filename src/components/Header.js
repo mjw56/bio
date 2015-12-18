@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Links } from './index';
 
-export default class Header {
+export default class Header extends Component {
   render() {
     return (
       <header className="page-header">
@@ -10,7 +10,7 @@ export default class Header {
         <h1 className="header-name">{this.props.name}</h1>
 
         <div className="title-bar">
-          <h2 className="header-title">Senior JavaScript Developer</h2>
+          <h2 className="header-title">Software Engineer</h2>
           <Links {...this.props} />
         </div>
 
