@@ -8,3 +8,7 @@
 .resume-items .resume-item {
 	margin-bottom: 0;
 }
+
+.resume-items h2 {
+	display: inline;
+}

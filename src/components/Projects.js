@@ -17,7 +17,7 @@ export default class Projects extends Component {
     return (
       <section className="content-section">
         <header className="section-header">
-          <h2>Projects</h2>
+          <h2>Side Projects</h2>
         </header>
 
         {this._renderProjects()}

@@ -9,8 +9,6 @@ import configureStore from './lib/configureStore';
 const store = configureStore(window.__INITIAL_STATE__);
 const history = createHistory();
 
-console.log('howdy', window.__INITIAL_STATE__)
-
 ReactDOM.render(
   <Provider store={store}>
       <Router children={routes} history={history} />

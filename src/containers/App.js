@@ -19,10 +19,10 @@ class App extends Component {
     return (
       <div className="wrapper">
         <Header {...info} />
-        <Experience {...info} />
-        <Education {...info} />
-        <Projects {...info} />
         <Skills {...info} />
+        <Education {...info} />
+        <Experience {...info} />
+        <Projects {...info} />
       </div>
     );
   }

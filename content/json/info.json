@@ -2,33 +2,34 @@
   "name": "Mike Wilcox",
   "education": {
     "school": "Rutgers University, New Brunswick, NJ",
-    "subject": "B.S. in Computer Science",
+    "subject": "B.S. Computer Science",
     "time": "2010-2013"
   },
   "skills": [
     "JavaScript",
     "ReactJS",
     "AngularJS",
-    "jQuery",
     "TypeScript",
     "node.JS",
-    "python",
-    "ruby",
-    "test driven development",
-    "git"
+    "Python",
+    "Ruby",
+    "Java",
+    "TDD",
+    "git",
+    "vim"
   ],
   "work": [
     {
       "company": "Bank of America: Merrill Lynch",
       "title": "Assistant Vice President (Software Developer)",
       "time": "February 2013 - Present",
-      "duties": "Architect and develop HTML5 AngularJS mobile/desktop applications. Mentor younger developers.\n\n Prototype development using agile software methodology."
+      "duties": "Architected and developed mobile/desktop applications (Goal Explorer, Understanding Your Life, Wealth Outlook, Investor Personality Assessment, Client 360) using JavaScript, TypeScript, AngularJS, HTML5, CSS3, Test Driven Development, agile methodologies. Mentored new developers in a lead developer role. Worked across multiple teams to collaborate and accomplish development tasks. Introduced Grunt, browserify, and flux to the company through use in projects. Rapid prototype development using agile software methodology."
     },
     {
       "company": "Fifth Room Creative",
       "title": "Web Developer",
       "time": "March 2011 - July 2012",
-      "duties": "Custom Wordpress development. PHP/Javascript/SQL/Ruby/HTML/CSS web application development."
+      "duties": "Custom Wordpress development. PHP/Javascript/SQL/Ruby/HTML/CSS web application development. This job brought me my first experience with using git, and doing web development in a Linux/OS X environment."
     },
     {
       "company": "Washington Township",
@@ -59,7 +60,7 @@
   "projects": [
     {
       "title": "At the Drive-In",
-      "description": "A searchable streaming torrent movie and TV show app built using React and Redux (Flux).",
+      "description": "A searchable streaming torrent movie and TV show app built using React and Redux.",
       "link": "https://github.com/mjw56/at-the-drive-in-redux"
     },
     {
@@ -69,7 +70,7 @@
     },
     {
       "title": "ruscello",
-      "description": "A simple app listing New York Times Best Sellers. Uses TypeScript, React and Redux. Latest TypeScript 1.6 features including TSX and ES6 modules.",
+      "description": "A simple boilerplate listing New York Times Best Sellers. Scrapes data from New York Times website using node + cheerio. Uses latest TypeScript, React and Redux.",
       "link": "https://github.com/mjw56/ruscello"
     }
   ]
