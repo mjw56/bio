@@ -7,6 +7,6 @@ import request from 'axios';
 export function fetchInfo() {
   return {
     type: FETCH_INFO,
-    promise: request.get('http://localhost:5000/content/json/info.json')
+    promise: request.get('https://whispering-shelf-6522.herokuapp.com/content/json/info.json')
   };
 }
