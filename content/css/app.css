@@ -4,3 +4,7 @@
 	display: -webkit-inline-box;
 	margin-right: 8px;
 }
+
+.resume-items .resume-item {
+	margin-bottom: 0;
+}
