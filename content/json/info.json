@@ -59,6 +59,16 @@
   },
   "projects": [
     {
+      "title": "ruscello",
+      "description": "A simple boilerplate listing New York Times Best Sellers. Scrapes data from New York Times website using node + cheerio. Uses latest TypeScript, React and Redux.",
+      "link": "https://github.com/mjw56/ruscello"
+    },
+    {
+      "title": "redux-starter-pack",
+      "description": "A Universal Redux starter pack.",
+      "link": "https://github.com/mjw56/redux-starter-pack"
+    },
+    {
       "title": "At the Drive-In",
       "description": "A searchable streaming torrent movie and TV show app built using React and Redux.",
       "link": "https://github.com/mjw56/at-the-drive-in-redux"
@@ -66,12 +76,7 @@
     {
       "title": "randUM",
       "description": "An iOS React Native app to search for and stream music from the archive.org website",
-      "link": "https://github.com/mjw56/archive-rn-app"
-    },
-    {
-      "title": "ruscello",
-      "description": "A simple boilerplate listing New York Times Best Sellers. Scrapes data from New York Times website using node + cheerio. Uses latest TypeScript, React and Redux.",
-      "link": "https://github.com/mjw56/ruscello"
+      "link": "https://github.com/mjw56/redux-starter-pack"
     }
   ]
 }
