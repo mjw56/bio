@@ -78,5 +78,22 @@
       "description": "An iOS React Native app to search for and stream music from the archive.org website",
       "link": "https://github.com/mjw56/redux-starter-pack"
     }
+  ],
+  "articles": [
+    {
+      "title": "The Developers Guide to the Angular 1.x & TypeScript Galaxy",
+      "description": "A mini book I wrote using gitbook. Walks through setting up and deploying a modern AngularJS 1.x and TypeScript application.",
+      "link": "https://mjw56.gitbooks.io/the-developers-guide-to-the-angular-typescript-ga/content/"
+    },
+    {
+      "title": "Writing Your First React App",
+      "description": "A developers guide to writing their first ReactJS app with webpack and Babel.",
+      "link": "https://medium.com/@mjw56/writing-your-first-react-app-3dcade94d38e#.26eytlrmn"
+    },
+    {
+      "title": "Writing a React App with TypeScript",
+      "description": "A follow-up to Writing Your First React App which adds TypeScript to the project.",
+      "link": "https://medium.com/@mjw56/writing-a-react-app-with-typescript-6f18719fce35#.w4crpgtu4"
+    }
   ]
 }
